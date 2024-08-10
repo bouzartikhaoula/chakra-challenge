@@ -11,7 +11,7 @@ import React from "react";
 const Pricing = () => {
   return (
     <Box  w="60%" m="auto"  mt="-150px" >
-      <Flex   bg='white' rounded='md'>
+      <Flex   bg='white' rounded='md' direction={['column','column','row']}>
         <Box textAlign='center'  p="15px" bg='#F0EAFB' rounded='md' >
           <Text fontSize="24" fontWeight="800">
             Premium PRO
@@ -34,7 +34,7 @@ const Pricing = () => {
         </Box>
         <Box m="15px">
           <Text noOfLines={2}> Access Thes features when you get this Pricing  you get this Pricing</Text>
-          <List  mt="20px "spacing={3}>
+          <List  mt="20px " spacing={3}>
             <ListItem>
               <ListIcon as={CheckIcon} color="#6B46C1" rounded='md' bg={"white"} />
               Lorem ipsum dolor sit amet, consectetur adipisicing elit
